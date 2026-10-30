@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swile | Central do Trade</title>
+
+    <style>
+
+        :root{
+            --azul:#0057B8;
+            --fundo:#F5F7FA;
+            --texto:#2D3748;
+            --branco:#FFFFFF;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI", sans-serif;
+        }
+
+        body{
+            background:var(--fundo);
+            color:var(--texto);
+        }
+
+        .container{
+            max-width:800px;
+            margin:auto;
+            padding:50px 25px;
+        }
+
+        h1{
+            text-align:center;
+            color:var(--azul);
+            margin-bottom:40px;
+            font-size:42px;
+        }
+
+        .botoes{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        .botao{
+            background:var(--branco);
+            color:var(--azul);
+            text-decoration:none;
+            text-align:center;
+            padding:22px;
+            border-radius:18px;
+            font-size:18px;
+            font-weight:600;
+            box-shadow:0 4px 14px rgba(0,0,0,.08);
+            transition:.2s;
+        }
+
+        .botao:hover{
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,.12);
+        }
+
+        .voltar{
+            display:block;
+            text-align:center;
+            margin-top:40px;
+            color:#666;
+            text-decoration:none;
+            font-size:16px;
+        }
+
+        .voltar:hover{
+            color:var(--azul);
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:32px;
+            }
+
+            .botao{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Swile</h1>
+
+        <div class="botoes">
+
+            <a class="botao" href="https://ajuda.swile.com.br/hc/pt-br/requests/new"
+       target="_blank">
+                🛟 Central de ajuda do usuário
+            </a>
+
+            <a class="botao" href="https://redemoura4.sharepoint.com/:f:/r/sites/TRADEMARKETINGREDEMOURA/Documentos%20Compartilhados/Swile?d=wa947ee4c20dc40c4bdcfe66f551c66fe&csf=1&web=1&e=IGUiuf"
+       target="_blank">
+                🖼️ Materiais de uso
+            </a>
+
+        </div>
+
+        <a class="voltar" href="index.html">
+            ← Voltar para a página inicial
+        </a>
+
+    </div>
+
+</body>
+
+</html>

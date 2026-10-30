@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanhas | Central do Trade</title>
+
+    <style>
+
+        :root{
+            --azul:#0057B8;
+            --fundo:#F5F7FA;
+            --texto:#2D3748;
+            --branco:#FFFFFF;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI", sans-serif;
+        }
+
+        body{
+            background:var(--fundo);
+            color:var(--texto);
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:50px 25px;
+        }
+
+        h1{
+            text-align:center;
+            color:var(--azul);
+            margin-bottom:40px;
+            font-size:42px;
+        }
+
+        .subtitulo{
+            margin-top:45px;
+            margin-bottom:20px;
+            color:var(--azul);
+            text-align:center;
+        }
+
+        .botoes{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        .botao{
+            background:var(--branco);
+            color:var(--azul);
+            text-decoration:none;
+            text-align:center;
+            padding:22px;
+            border-radius:18px;
+            font-size:18px;
+            font-weight:600;
+            box-shadow:0 4px 14px rgba(0,0,0,.08);
+            transition:.2s;
+        }
+
+        .botao:hover{
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,.12);
+        }
+
+        .card-contato{
+            background:var(--branco);
+            padding:22px;
+            border-radius:18px;
+            margin-top:20px;
+            box-shadow:0 4px 14px rgba(0,0,0,.08);
+            text-align:center;
+        }
+
+        .card-contato h3{
+            color:var(--azul);
+            margin-bottom:12px;
+        }
+
+        .card-contato p{
+            margin:6px 0;
+        }
+
+        .voltar{
+            display:block;
+            text-align:center;
+            margin-top:40px;
+            color:#666;
+            text-decoration:none;
+            font-size:16px;
+        }
+
+        .voltar:hover{
+            color:var(--azul);
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:32px;
+            }
+
+            .botao{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Campanhas</h1>
+
+        <div class="botoes">
+
+            <a class="botao"
+               href="https://redemoura4.sharepoint.com/:f:/r/sites/TRADEMARKETINGREDEMOURA/Documentos%20Compartilhados/Campanhas%20Trade/Calend%C3%A1rios%20Trade?d=wdc1cfc94f9984e57a554b9a5667edc49&csf=1&web=1&e=V9fjKa"
+               target="_blank">
+                📅 Calendário Trade
+            </a>
+
+            <a class="botao"
+               href="https://synergyportal.grupomoura.com/dashboard/18f06da7-42a8-4a89-af26-4dbd5b589e47/0de49049-0a77-4a4b-99af-5a2b6c7f1742/embedded"
+               target="_blank">
+                📈 Relatório Campanhas Trade
+            </a>
+
+        </div>
+
+        <h2 class="subtitulo">⚡ Energia Premiada</h2>
+
+        <div class="botoes">
+
+            <a class="botao"
+               href="https://painel.epmoura.com.br/"
+               target="_blank">
+                📊 Painel Energia Premiada
+            </a>
+
+            <a class="botao"
+               href="https://redemoura4.sharepoint.com/:b:/r/sites/TRADEMARKETINGREDEMOURA/Documentos%20Compartilhados/Campanhas%20Trade/Energia%20Premiada%20-%20Apresenta%C3%A7%C3%A3o%20Completa_2026.pdf?d=w0317ee956ac448158254df0a3dbec0ba&csf=1&web=1&e=htwetf"
+               target="_blank">
+                🖥️ Apresentação Energia Premiada
+            </a>
+
+        </div>
+
+        <div class="card-contato">
+            <h3>Suporte Energia Premiada</h3>
+            <p>📧 suporte@epmoura.com.br</p>
+            <p>📱 +55 81 9250-9025</p>
+        </div>
+
+        <h2 class="subtitulo">🤝 Quem Entende Indica Moura</h2>
+
+        <div class="botoes">
+
+            <a class="botao"
+               href="https://indicamoura.com.br/"
+               target="_blank">
+                🌐 Site Quem Entende Indica Moura
+            </a>
+
+        </div>
+
+        <div class="card-contato">
+            <h3>Suporte Quem Entende Indica Moura</h3>
+            <p>📧 suporte@indicamoura.com.br</p>
+            <p>📱 +55 81 9322-5094</p>
+        </div>
+
+        <a class="voltar" href="index.html">
+            ← Voltar para a página inicial
+        </a>
+
+    </div>
+
+</body>
+
+</html>

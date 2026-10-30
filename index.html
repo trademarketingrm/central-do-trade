@@ -4,161 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Central do Trade</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
-}
-
-body{
-    background:#f5f7fa;
-}
-
-.header{
-    background:linear-gradient(135deg,#0057B8,#2F80ED);
-    color:white;
-    padding:30px;
-    text-align:center;
-}
-
-.header h1{
-    font-size:40px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:16px;
-    padding:25px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h2{
-    color:#0057B8;
-    margin-bottom:10px;
-}
-
-.card a{
-    display:inline-block;
-    margin-top:15px;
-    text-decoration:none;
-    color:white;
-    background:#0057B8;
-    padding:10px 15px;
-    border-radius:8px;
-}
-
-.updates{
-    margin-top:30px;
-    background:white;
-    padding:25px;
-    border-radius:16px;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
-}
-
-.footer{
-    text-align:center;
-    padding:25px;
-    color:#666;
-}
+:root{--azul:#0057B8;--fundo:#F5F7FA;--texto:#2D3748}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:var(--fundo);color:var(--texto)}
+.container{max-width:1200px;margin:auto;padding:40px 25px}
+.header{text-align:center;margin-bottom:50px}
+.header h1{color:var(--azul);font-size:52px;margin-bottom:10px}
+.header p{color:#6b7280;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#fff;border-radius:18px;padding:30px 20px;text-align:center;text-decoration:none;color:var(--texto);box-shadow:0 4px 14px rgba(0,0,0,.08);transition:.25s}
+.card:hover{transform:translateY(-6px)}
+.icon{font-size:42px;margin-bottom:12px}
+.card h2{color:var(--azul);font-size:22px}
+.updates{background:#fff;margin-top:50px;padding:30px;border-radius:18px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.updates h3{color:var(--azul);margin-bottom:15px}
+.updates ul{padding-left:20px}
+.updates li{margin-bottom:10px}
+.footer{text-align:center;margin-top:60px;color:#888;font-size:14px}
 </style>
 </head>
-
 <body>
-
-<div class="header">
-    <h1>Central do Trade</h1>
-    <p>Rede Moura | Portal de Trade Marketing</p>
-</div>
-
 <div class="container">
-
-    <div class="grid">
-
-        <div class="card">
-            <h2>📢 Campanhas</h2>
-            <p>Materiais, regulamentos e campanhas vigentes.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>⭐ Indicação Moura</h2>
-            <p>Resultados, metodologia e dashboards.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>💳 Swile</h2>
-            <p>Materiais, regras e resultados.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>🏪 Execução</h2>
-            <p>Guias, checklists e padrões.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>🎓 Academia Moura</h2>
-            <p>Treinamentos e trilhas de aprendizagem.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>📊 Dashboards</h2>
-            <p>Links dos principais painéis Power BI.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>📁 Materiais</h2>
-            <p>Templates, apresentações e documentos.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-        <div class="card">
-            <h2>📞 Contatos</h2>
-            <p>Equipe Trade Marketing e suporte.</p>
-            <a href="#">Acessar</a>
-        </div>
-
-    </div>
-
-    <div class="updates">
-        <h2>Últimas Atualizações</h2>
-        <br>
-        <ul>
-            <li>Inserir comunicados importantes aqui.</li>
-            <li>Divulgar novas campanhas.</li>
-            <li>Informar atualizações de indicadores.</li>
-        </ul>
-    </div>
-
+<div class="header">
+<h1>Central do Trade</h1>
+<p>Rede Moura | Portal de Trade Marketing</p>
 </div>
-
-<div class="footer">
-    Central do Trade | Rede Moura
+<div class="cards">
+<a class="card" href="diagnostico-trade.html"><div class="icon">📊</div><h2>Diagnóstico Trade</h2></a>
+<a class="card" href="indicacao-moura.html"><div class="icon">🤝</div><h2>Indicação Moura</h2></a>
+<a class="card" href="campanhas.html"><div class="icon">📢</div><h2>Campanhas</h2></a>
+<a class="card" href="swile.html"><div class="icon">💳</div><h2>Swile</h2></a>
+<a class="card" href="execucao.html"><div class="icon">📍</div><h2>Execução</h2></a>
+<a class="card" href="academia-moura.html"><div class="icon">🎓</div><h2>Academia Moura</h2></a>
+<a class="card" href="investimento-trade.html"><div class="icon">💰</div><h2>Investimento Trade</h2></a>
+<a class="card" href="contatos.html"><div class="icon">📞</div><h2>Contatos</h2></a>
 </div>
-
+<div class="footer">Central do Trade • Versão 1.0</div>
+</div>
 </body>
 </html>

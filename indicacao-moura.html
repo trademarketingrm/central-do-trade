@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicação Moura | Central do Trade</title>
+
+    <style>
+
+        :root{
+            --azul:#0057B8;
+            --fundo:#F5F7FA;
+            --texto:#2D3748;
+            --branco:#FFFFFF;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI", sans-serif;
+        }
+
+        body{
+            background:var(--fundo);
+            color:var(--texto);
+        }
+
+        .container{
+            max-width:800px;
+            margin:auto;
+            padding:50px 25px;
+        }
+
+        h1{
+            text-align:center;
+            color:var(--azul);
+            margin-bottom:40px;
+            font-size:42px;
+        }
+
+        .botoes{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        .botao{
+            background:var(--branco);
+            color:var(--azul);
+            text-decoration:none;
+            text-align:center;
+            padding:22px;
+            border-radius:18px;
+            font-size:18px;
+            font-weight:600;
+            box-shadow:0 4px 14px rgba(0,0,0,.08);
+            transition:.2s;
+        }
+
+        .botao:hover{
+            transform:translateY(-4px);
+            box-shadow:0 8px 20px rgba(0,0,0,.12);
+        }
+
+        .voltar{
+            display:block;
+            text-align:center;
+            margin-top:40px;
+            color:#666;
+            text-decoration:none;
+            font-size:16px;
+        }
+
+        .voltar:hover{
+            color:var(--azul);
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:32px;
+            }
+
+            .botao{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Indicação Moura</h1>
+
+        <div class="botoes">
+
+            <a class="botao" href="https://synergyportal.grupomoura.com/dashboard/82397c6d-7de0-47da-94e9-ce398334d8ed/13801c82-19c9-421e-8989-fec6e7467f0b/embedded"
+       target="_blank">
+                📈 Relatório no Portal de Inteligência
+            </a>
+
+            <a class="botao" href="https://moura4.sharepoint.com/:f:/s/Trade-IndicaoMoura/IgCvLZK1Rbb0S794RTge1M-nAV6K1dp7xWo6LVyarLWMFO4?e=Zi4Ys0"
+       target="_blank">
+                🎧 Áudios da pesquisa
+            </a>
+
+            <a class="botao" href="https://redemoura4.sharepoint.com/:b:/r/sites/TRADEMARKETINGREDEMOURA/Documentos%20Compartilhados/Indica%C3%A7%C3%A3o%20Moura/Indica%C3%A7%C3%A3o%20Moura.pdf?d=w56c9f8c0588d40e6a467ad1083b0abbd&csf=1&web=1&e=jRtaXm"
+       target="_blank">
+                🖥️ Apresentação
+            </a>
+
+        </div>
+
+        <a class="voltar" href="index.html">
+            ← Voltar para a página inicial
+        </a>
+
+    </div>
+
+</body>
+</html>
